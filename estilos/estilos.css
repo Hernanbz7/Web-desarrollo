@@ -5,12 +5,13 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
+    transition: ease all 1s;
 }
 
 #grid-area{
     display: grid;
     grid-template-areas:
-    "logo menu menu"
+    "menu menu menu"
     "main main main"
     "intro intro intro"
     "servicios servicios servicios"
@@ -19,7 +20,7 @@
     height: 100%;
     width: auto;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px auto 200px auto auto;
+    grid-template-rows: 100px auto 150px auto auto;
     
 }
 
@@ -36,12 +37,24 @@
     height: 100%;
     width: auto;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px auto 200px auto auto
+    grid-template-rows: auto auto 150px auto auto auto;
 }
 
 body{
     width: auto;
     height: 100%;
+}
+.principal{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    transition: ease all 1s;
+
 }
 
 
@@ -49,29 +62,26 @@ body{
     background-color: rgba(255, 255, 255, 0.837);
     grid-area: logo;
     width: 100%;
-    position: sticky;
-    top: 0px;
-    z-index: 5;
+    transition: ease all 1s;
+    
 }
 
-.header-us{
-    display: flex;
-    flex-direction: row;
-
-}
 
 .menu__logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 
 .menu__logo img{
-    width: 300px;
-    height: auto;
-    align-items: center;
+    width: auto;
+    height: 70px;
+    align-self: center;
+    justify-self: center;
+    
+    
 }
 
 .header__menu{
@@ -83,9 +93,7 @@ body{
     font-weight: 700;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 0px;
-    z-index: 5;
+    
 }
 
 .menu__list{
@@ -97,6 +105,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
+    
 }
 
 .menu__item{
@@ -121,6 +130,8 @@ body{
     color: white;
 }
 
+
+
 .contacto a:hover{
     border-radius: 50px;
     background-color: #001324;
@@ -130,26 +141,30 @@ body{
 
 
 .main{
-    background-color: #001324;
+    background-color: rgb(0, 19, 36);
     grid-area: main;
     display: grid;
     width: 100%;
-    height: 70vh;
+    height: 100%;
 }
 
 .main__image{
     width: 100%;
-    height: 100%;
-    background-image:url(./fondo.jpg);
+    height: 700px;
+    grid-row: auto-fit;
+    background-image: linear-gradient(to right,rgb(0, 19, 36, 0.52), rgba(0, 0, 0, 0.52)),url('./fondo.jpg');
     background-size: cover;
     background-attachment: fixed;
+    transition: ease all 1s;
+    
 }
+
+
 
 .main__text{
     text-align: center;
     width: 100%;
     position: absolute;
-    z-index: 1;
     align-self: center;
     justify-self: center;
 }
@@ -199,6 +214,7 @@ h1 span{
     justify-content: center;
     padding: 30px 0px;
     background: linear-gradient(to right,white,rgb(239, 237, 237),rgb(218, 217, 217),white);
+    
 }
 
 .intro__text h3{
@@ -220,6 +236,7 @@ h1 span{
     align-items: center;
     margin: 30px auto;
     row-gap: 25px;
+    
 }
 
 .servicios-us{
@@ -246,6 +263,9 @@ h1 span{
     transition: all .2s ease-in-out; 
 }
 
+.servicios-us div:hover{
+    transform: scale(1.1);
+}
 
 .servicios__box{
     background: linear-gradient(to right,#001324,black);
@@ -462,9 +482,20 @@ h1 span{
     color: red;
 }
 
+.btn-menu {
+    display: none;
+    
+}
+
+#toggle{
+    display: none;
+}
+
+/* Inicio de Media Query */
+
 @media (max-width:1074px){
 
-    #grid-area{
+    /* #grid-area{
         display: grid;
         grid-template-areas: 
         "logo menu menu"
@@ -476,12 +507,132 @@ h1 span{
         height: 100%;
         width: auto;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: 100px auto 200px auto auto;
-    }
-    .header img{
-        display: none;
+        grid-template-rows: 100px 350px 150px auto auto;
+    } */
+
+    #grid-area{
+        grid-template-rows: 170px auto 150px auto auto;
     }
 
+    .principal{
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+
+    }
+
+    .menu__logo{
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__logo img{
+        height: 70px;
+        width: auto;
+    }
+
+    .main__image{
+        height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+
+    .menu__list{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+    .main{
+        grid-row: 2/3;
+    }
+
+    #toggle:checked + .menu__list{
+        max-height: 500px;
+        display: flex;
+        flex-direction: row;
+      }
+
+    .header__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        
+    }
+
+    .btn-menu {
+        
+        box-sizing: border-box;
+        display: flex;
+        border: 1px solid black;
+        border-radius: 5px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .btn-menu img{
+        height: 40px;
+        width: auto;
+      }
+
+      .menu__item{
+        display: block;
+        margin: 0;
+        padding: 10px;
+      }
+
+      .contacto a{
+        color: black;
+        padding-bottom: 10px;
+        border-radius: 0px;
+        padding: 0px;
+        background-color: white;
+      }
+
+      .contacto a:hover{
+        background-color: rgba(110, 125, 133, 0.173);
+        border-radius: 0px;
+        border: none;
+        padding: 0px;
+        color: #00315ca3;
+
+      }
+
+      .menu__item:hover{
+        background-color: #6b6d6e2c;
+      }
+
+      .menu__item a:hover{
+        border-bottom: none;
+      }
+
+
+}
+
+@media (max-width:530px) {
+    .servicios-us iframe {
+        width: 350px;
+        height: 200px;
+        background-color: red;
+    }
+    .principal{
+        position: relative;
+    }
 }
 
 
