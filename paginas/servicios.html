@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/estilos.css">
-    <title>Servicos</title>
+    <title>Servicios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/sej2zhf.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/c61a866299.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -48,8 +49,9 @@
             </div>
         </section> 
 
-        <div class="servicios-us">
-            <table border=1px class="servicios table">
+        <div class="table-head">
+            
+            <table class="servicios table">
                 <tr>
                     <th>Servicio</th>
                     <th>Descripción</th>
@@ -80,19 +82,97 @@
                     <td>Recibos, cheques, pagarés, letras de cambio, contratos, balances, estatutos, actas de asamblea/directorio y demás documentos societarios.</td>
                     <td>No</td>
                 </tr>
-
             </table>
         </div>
 
-        <div class="aboutus">
-
-        </div>
+        <section class="aboutus mas-serv">
+            <div class="intro__text2">
+                <h3>Otros Servicios</h3>
+            </div>
+            <div class="card m-2" style="width: 22rem; height: 500px;">
+                <img src="../estilos/proof.webp" class="card-img-top" alt="Proofreading">
+                <div class="card-body">
+                <h3><strong> Proofreading</strong></h3>
+                  <p class="card-text">Se trata de una revisión llevada a cabo por otro traductor, que corrige los posibles errores que se le hayan podido escapar y acaba de pulir el estilo para conseguir traducciones de la más alta calidad.</p>
+                </div>
+              </div>
+              <div class="card m-2" style="width: 22rem; height: 500px;">
+                <img src="../estilos/loctexto.webp" class="card-img-top" alt="Localización" style="height: 500px;">
+                <div class="card-body">
+                    <h3><strong> Localizacion</strong></h3>
+                  <p class="card-text">La localización (abreviada “l10n”) es el proceso de adaptar un proceso o servicio a un lenguaje, cultura y aspecto local particular deseado. Idealmente, un producto o un servicio se desarrolla para que la localización sea fácil de alcanzar</p>
+                </div>
+              </div>
+              <div class="card m-2" style="width: 22rem; height: 500px;">
+                <img src="../estilos/tradaudiovisual.webp" class="card-img-top" alt="Audiovisual">
+                <div class="card-body">
+                    <h3><strong> Audiovisual</strong></h3>
+                  <p class="card-text">Servicios de subtitulado, traducción de guión, transcripción, adaptación para doblaje, temporización y demás traducciones relacionadas con lo audiovisual.</p>
+                </div>
+              </div>
+              <div class="card m-2" style="width: 22rem; height: 500px;">
+                <img src="../estilos/propintelectual.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3><strong> Copyright</strong></h3>
+                  <p class="card-text">Estudios y documentos técnicos y científicos; patentes de invención, marcas, certificados de inscripción (derechos de autor), y más.</p>
+                </div>
+              </div>
+        </section>
 
        
     
-        <footer class="footer">
-            <p class="left-text"><a href="#">Desarrollado por Hernan Baez</a></p>
-        
+       <footer class="footer">
+            <footer class="bg-dark text-center text-white" style="background: linear-gradient(to right,black,#001324);">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                  <!-- Section: Form -->
+                  <section class="">
+                    <form action="">
+                      <!--Grid row-->
+                      <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                          <p class="pt-2">
+                            <strong>¡Sumate a nuestro Newsletter!</strong>
+                          </p>
+                        </div>
+                        <!--Grid column-->
+              
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                          <!-- Email input -->
+                          <div class="form-outline form-white mb-4">
+                            <input type="email" id="form5Example29" class="form-control" />
+                            <label class="form-label" for="form5Example29">Email</label>
+                          </div>
+                        </div>
+                        <!--Grid column-->
+              
+                        <!--Grid column-->
+                        <div class="col-auto">
+                          <!-- Submit button -->
+                          <button type="submit" class="btn btn-outline-light mb-4">
+                            Suscribite
+                          </button>
+                        </div>
+                        <!--Grid column-->
+                      </div>
+                      <!--Grid row-->
+                    </form>
+                  </section>
+                  <!-- Section: Form -->
+                </div>
+                <!-- Grid container -->
+              
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background: linear-gradient(to right,black,#001324);">
+                  © 2022 Copyright:
+                  <a class="text-white" href="https://mdbootstrap.com/">Hernan Baez</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+                <!-- <p class="left-text"><a href="#">Desarrollado por Hernan Baez</a></p>
+            
             <div class="footer__text">
                 <ul>
                     <li><i class="fa-solid fa-location-dot"></i>Direccion: <p>Hipolito Yrigoyen 1160</p>
@@ -101,10 +181,13 @@
                     <li><i class="fa-solid fa-mobile-button"></i>Telefono: <p>1162996356</p></li>
                     <li><i class="fa-solid fa-envelope"></i>Email: <p>info@sirtraducciones.com</p></li>
                 </ul>
-            </div>
+            </div> -->
         </footer>
-
     </div>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
 </html>

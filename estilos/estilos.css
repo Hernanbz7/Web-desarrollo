@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-decoration: none;
+    text-decoration: none !important;
     transition: ease all 0.5s;
 }
 
@@ -22,6 +22,24 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 100px auto 150px auto auto;
     
+}
+
+#grid-area-faq{
+    display: grid;
+    grid-template-areas: 
+    "logo menu menu"
+    "intro intro intro"
+    "faq-acc faq-acc faq-acc"
+    "footer footer footer";
+    row-gap: 2px;
+    height: 100%;
+    width: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px auto auto 200px;
+}
+    
+.accordion{
+    grid-area: faq-acc;
 }
 
 #grid-area-us{
@@ -49,19 +67,19 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: auto;
     position: sticky;
     top: 0px;
     z-index: 10;
-    
-
 }
+
 
 
 .header{
     background-color: rgba(255, 255, 255, 0.837);
     grid-area: logo;
     width: 100%;
+    height: 100px;
     
     
 }
@@ -259,8 +277,6 @@ section.form{
 }
 
 
-
-
 .servicios{
     grid-area: servicios;
     display: grid; 
@@ -405,6 +421,8 @@ section.form{
 
 }
 
+
+
 .faq{
     width: 90%;
     height: auto;
@@ -468,13 +486,14 @@ section.form{
 .footer{
     grid-area: footer;
     width: 100%;
-    height: 150px;
+    height: auto;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     display:grid;
     grid-template-columns:  repeat(auto-fit, minmax(20rem, 1fr)); 
     background: linear-gradient(to right,black,#001324);
+    padding: 20px;
 }
 
 
@@ -549,6 +568,18 @@ section.form{
     display: none;
 }
 
+.accordion-body p{
+    padding-top: 15px;
+}
+
+.table-head{
+    grid-area: servicios-us;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto;
+}
+
 /* Inicio de Media Query */
 
 @media (max-width:1074px){
@@ -571,6 +602,10 @@ section.form{
     #grid-area{
         grid-template-rows: 170px auto 150px auto auto;
     }
+    #grid-area-faq{
+        grid-template-rows: 170px 150px auto auto;
+    }
+
 
     .principal{
         grid-row: 1/2;
