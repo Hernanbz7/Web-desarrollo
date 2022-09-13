@@ -1,4 +1,7 @@
-   
+:root{
+    --color-degradado: linear-gradient(to right,black,#001324);
+}
+
 @import 'grid';
 @import 'header';
 @import 'main';

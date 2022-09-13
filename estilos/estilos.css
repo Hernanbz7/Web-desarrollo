@@ -1,3 +1,7 @@
+:root {
+  --color-degradado: linear-gradient(to right,black,#001324);
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
@@ -434,7 +438,7 @@ label {
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  background: linear-gradient(to right, black, #001324);
+  background: var(--color-degradado);
   padding: 20px;
 }
 
