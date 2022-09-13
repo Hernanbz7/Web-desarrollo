@@ -1,0 +1,47 @@
+.footer {
+    grid-area: footer;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    background: linear-gradient(to right,black,#001324);
+    padding: 20px;
+}
+.left-text {
+    display: flex;
+    margin: 0px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    a {
+        color: white;
+        padding-left: 50px;
+    }
+}
+.footer__text {
+    ul {
+        color: white;
+        li {
+            display: flex;
+            flex-direction: row;
+            margin: 0px auto;
+            text-align: start;
+            justify-content: start;
+            align-items: flex-start;
+            padding: 10px;
+            p {
+                text-align: start;
+                justify-content: start;
+                align-self: flex-start;
+                padding: 0px 10px;
+            }
+            i {
+                padding: 0px 15px;
+            }
+        }
+    }
+}

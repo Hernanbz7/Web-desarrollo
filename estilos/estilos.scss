@@ -1,0 +1,53 @@
+   
+@import 'grid';
+@import 'header';
+@import 'main';
+@import 'intro';
+@import 'footer';
+   
+    
+    
+    .boton-inicio {
+        position: fixed;
+        bottom: 50px;
+        float: right;
+        right: 5%;
+        max-width: 30px;
+        width: 100%;
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 4px;
+        i {
+            color: red;
+        }
+    }
+    .btn-menu {
+        display: none;
+    }
+    #toggle {
+        display: none;
+    }
+    .accordion-body {
+        p {
+            padding-top: 15px;
+        }
+    }
+    .table-head {
+        grid-area: servicios-us;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0px;
+    }
+    .table {
+        margin: 5px auto;
+        align-items: center;
+        display: flex;
+    }
+    .mas-serv {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+@import 'responsive'
+    

@@ -1,0 +1,39 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none !important;
+    transition: ease all 0.5s;
+}
+#grid-area {
+    display: grid;
+    grid-template-areas: "menu menu menu" "main main main" "intro intro intro" "servicios servicios servicios" "footer footer footer";
+    row-gap: 2px;
+    height: 100%;
+    width: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px auto 150px auto auto;
+}
+#grid-area-faq {
+    display: grid;
+    grid-template-areas: "logo menu menu" "intro intro intro" "faq-acc faq-acc faq-acc" "footer footer footer";
+    row-gap: 2px;
+    height: 100%;
+    width: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 120px auto 200px;
+}
+.accordion {
+    grid-area: faq-acc;
+}
+#grid-area-us {
+    display: grid;
+    grid-template-areas: "logo menu menu" "main main main" "intro intro intro" "servicios-us servicios-us servicios-us" "aboutus aboutus aboutus" "footer footer footer";
+    row-gap: 2px;
+    height: 100%;
+    width: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto 120px auto auto auto;
+}
