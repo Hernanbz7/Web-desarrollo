@@ -201,7 +201,7 @@ h1 span {
   background: linear-gradient(to right, white, rgb(239, 237, 237), rgb(218, 217, 217), white);
 }
 
-.intro__text h3 {
+.intro__text h1 {
   font-size: 30px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -209,6 +209,7 @@ h1 span {
   padding: 10px;
   margin-bottom: 20px;
   border-bottom: 3px solid red;
+  color: black;
 }
 
 div table {

@@ -10,12 +10,13 @@
     background: linear-gradient(to right,white,rgb(239, 237, 237),rgb(218, 217, 217),white);
 }
 .intro__text {
-    h3 {
+    h1 {
         font-size: 30px;
         width: fit-content;
         padding: 10px;
         margin-bottom: 20px;
         border-bottom: 3px solid red;
+        color: black
     }
 }
 div {
