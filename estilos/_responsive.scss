@@ -129,4 +129,31 @@
         height: 35px;
         width: 35px;
     }
+    table.table{
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width:380px) {
+    .formulario{
+        text-align: center;
+            .formulario p{
+                width: 100%;
+            }
+            textarea{
+                width: 100%;
+            }
+    } 
+    .intro__us p{
+        width: 90%;
+    }
+    .intro__us img{
+        width: 90%;
+    }
+
+    table.table{
+        font-size: 11px;
+    }
+
 }
