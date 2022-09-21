@@ -427,7 +427,7 @@ label {
   margin: 0px auto;
   margin-top: 15px;
   margin-bottom: 20px;
-  width: 50%;
+  width: 80%;
 }
 
 .footer {
@@ -653,6 +653,20 @@ label {
     font-size: 11px;
   }
 }
+@media (max-width: 480px) {
+  section.form {
+    width: 100%;
+  }
+  .formulario {
+    text-align: center;
+  }
+  section.p {
+    width: 100%;
+  }
+  textarea {
+    width: 90%;
+  }
+}
 @media (max-width: 380px) {
   .formulario {
     text-align: center;
@@ -671,5 +685,8 @@ label {
   }
   table.table {
     font-size: 11px;
+  }
+  section.form {
+    width: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */

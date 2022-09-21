@@ -135,6 +135,24 @@
 
 }
 
+@media (max-width:480px) {
+
+    section.form{
+        width: 100%;
+    }
+
+    .formulario{
+        text-align: center;
+    }
+
+    section.p{
+        width: 100%;
+    }
+
+    textarea{
+        width: 90%;
+    }
+}
 @media (max-width:380px) {
     .formulario{
         text-align: center;
@@ -155,5 +173,10 @@
     table.table{
         font-size: 11px;
     }
+
+    section.form{
+        width: 100%;
+    }
+
 
 }
