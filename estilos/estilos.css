@@ -218,30 +218,6 @@ div table {
   justify-content: center;
 }
 
-section.form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.formulario input {
-  padding: 5px;
-  margin: 5px;
-}
-.formulario p {
-  padding: 10px;
-}
-
-label {
-  padding: 10px;
-}
-
 .servicios {
   grid-area: servicios;
   display: grid;
@@ -362,14 +338,21 @@ label {
 .aboutus {
   grid-area: aboutus;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 30px auto;
   row-gap: 25px;
   height: auto;
+}
+
+div.card:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  color: black;
 }
 
 .faq {
@@ -428,6 +411,12 @@ label {
   margin-top: 15px;
   margin-bottom: 20px;
   width: 80%;
+}
+
+.form {
+  width: 70%;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -522,6 +511,29 @@ label {
 .mas-serv {
   display: flex;
   flex-wrap: wrap;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 50px;
+  float: left;
+  left: 5%;
+  max-width: 30px;
+  width: 100%;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 4px;
+  max-height: 50px;
+}
+.whatsapp .wsp {
+  height: 20px;
+  width: 20px;
+  font-size: 50px;
+  color: green;
+}
+.whatsapp .wsp:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
 
 @media (max-width: 1074px) {

@@ -26,27 +26,8 @@ div {
         justify-content: center;
     }
 }
-section.form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    input {
-        padding: 5px;
-        margin: 5px;
-    }
-    p {
-        padding: 10px;
-    }
-}
-label {
-    padding: 10px;
-}
+
+
 .servicios {
     grid-area: servicios;
     display: grid;
@@ -158,11 +139,14 @@ label {
         padding: 15px 15px;
     }
 }
+
+
+
 .aboutus {
     grid-area: aboutus;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -170,6 +154,16 @@ label {
     row-gap: 25px;
     height: auto;
 }
+
+div.card:hover{
+   
+        transform: scale(1.05);
+        transition: all .2s ease-in-out;
+        background-color: white;
+        color: black;
+    
+}
+
 .faq {
     width: 90%;
     height: auto;
@@ -220,4 +214,11 @@ label {
         margin-bottom: 20px;
         width: 80%;
     }
+}
+
+.form{
+    
+    width: 70%;
+    justify-content: center;
+    align-items: center;
 }
